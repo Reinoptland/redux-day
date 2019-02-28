@@ -6,7 +6,7 @@ const reducer = (state = 1, action = {}) => {
     case 'ADD_ONE':
       return state + 1
     case 'ADD_TWO':
-      return state * 2
+      return state + 2
     default:
       return state
     }
