@@ -16,9 +16,9 @@ const reducer = (state = 1, action = {}) => {
   
 
 const store = redux.createStore(reducer)
-console.log('Initial state of the store', store.getState())
+// console.log('Initial state of the store', store.getState())
 
-store.subscribe(() => console.log('Next state:', store.getState()))
+// store.subscribe(() => console.log('Next state:', store.getState()))
 
 const action = {
   type: 'ADD_ONE'
@@ -33,5 +33,3 @@ const actionTwo = {
 store.dispatch(actionTwo)
 
 module.exports = { reducer }
-
-
