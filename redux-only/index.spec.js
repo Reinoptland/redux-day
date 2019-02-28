@@ -25,3 +25,17 @@ test('5 + ADD_TWO should be 7', () => {
   }
   expect(reducer(5, action)).toBe(7)
 })
+
+test('5 + ADD_THREE should be 8', () => {
+  const action = {
+    type: 'ADD_THREE'
+  }
+  expect(reducer(5, action)).toBe(8)
+})
+
+test('0 + ADD_THREE should be 3', () => {
+  const action = {
+    type: 'ADD_THREE'
+  }
+  expect(reducer(0, action)).toBe(3)
+})
